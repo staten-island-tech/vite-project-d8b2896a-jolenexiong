@@ -1,4 +1,4 @@
-const item = [
+const food = [
     {
         name: "Raspberry Eclair",
         img: "https://static01.nyt.com/images/2019/01/30/dining/ss-raspberry-and-cream-eclairs/merlin_149765565_a2e74bc4-f85d-409b-ab6a-8517b2",
@@ -59,15 +59,17 @@ const item = [
         rating: 4,
         mostpop: true,
         seasonal: true,
+        bev: false,
     },
     {
-        name: "Red Velvet Battenberg Cake Slice",
-        img: "https://bakefromscratch.com/wp-content/uploads/2015/11/Bobs-Battenberg947JBweb-696x557.jpg",
-        price: 6,
-        rating: 4,
-        mostpop: false,
+        name: "Hot Chocolate",
+        img: "https://www.foodandwine.com/thmb/V1OEgtLQGUv_w2Fvm40WMLsJ4rk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Indulgent-Hot-Chocolate-FT-RECIPE0223-fd36942ef266417ab40440374fc76a15.jpg",
+        price: 2,
+        rating: 5,
+        mostpop: true,
         seasonal: false,
+        bev: true,
     },
-
-
 ];
+
+export { food };
