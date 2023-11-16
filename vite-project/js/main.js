@@ -27,7 +27,7 @@ const DOMSelectors = {
     szn: document.querySelector("#sznbtn"),
 };
 
-function rating() {
+function pop() {
     document.querySelector(".pop").forEach((btn))
 
 }
