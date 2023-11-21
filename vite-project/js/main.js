@@ -2,17 +2,17 @@ import "../css/style.css";
 import { food } from "./food";
 
 function displayall() {
-    app.insertAdjacentHtml(
-        "afterbegin",
+    let app = document.querySelector("#app")
+    food.forEach((meal) => app.insertAdjacentHTML(
+        "beforeend",
         `<div class="card">
-<h2>${food.name}</h2>
-<img src = "${food.img}">
-<h2>${food.rating}</h2>
-<h2>${food.price}</h2>
+<h2>${meal.name}</h2>
+<img src = "${meal.img}"class="pic">
+<h2>${meal.price}</h2>
 </div>`
-    );
-};
-displayall();
+    ));
+}
+displayall()
 
 console.log(food)
 
@@ -25,11 +25,12 @@ const DOMSelectors = {
     bev: document.querySelector("#bevbtn"),
     szn: document.querySelector("#sznbtn"),
 
+
 };
 
 function pop() {
-    document.querySelector(".pop").forEach((btn)=>btn.addEventListener('click', function (event) {
-food.filter((food)=>food.mostpop===true)
-})
+    document.querySelector(".pop").forEach((btn) => btn.addEventListener('click', function (event) {
+        food.filter((food) => food.mostpop === true)
+    })
     );
 }
