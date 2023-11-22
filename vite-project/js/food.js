@@ -1,7 +1,7 @@
 const food = [
     {
         name: "Raspberry Eclair",
-        img: "https://th.bing.com/th/id/OIP.qYUqKr4bwTZQKO48UFgDGQHaFj?rs=1&pid=ImgDetMain",
+        img: "https://th.bing.com/th/id/R.59fead8b87c6641be4e4c73145244da5?rik=Zayssi3li%2fmwBw&pid=ImgRaw&r=0",
         price: 4.50,
         mostpop: true,
         seasonal: false,
@@ -10,7 +10,7 @@ const food = [
 
     {
         name: "Pain au Chocolat",
-        img: "https://www.thespruceeats.com/thmb/D9po8nbJ09H8YjW_cFcpAQH7Q5I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-easy-pain-au-chocolat-recipe-1374869-hero-C-e1d7f1e947094ab39c3ab063039202e0.jpg",
+        img: "https://th.bing.com/th/id/R.b54af02133f044168d7a2710442359e0?rik=B%2faONHuZ%2b8YU7w&riu=http%3a%2f%2fgateaux-et-delices.com%2fwp-content%2fuploads%2f2016%2f02%2fPains-au-chocolat-express1-1.jpg&ehk=6b5GCuFmlvOtwb7X5pJXhTyJug4Cwb0aj2Ou7I1MkOs%3d&risl=&pid=ImgRaw&r=0",
         price: 4,
         mostpop: true,
         seasonal: false,
@@ -18,8 +18,8 @@ const food = [
     },
 
     {
-        name: "Tiramisu Cake Slice",
-        img: "https://thebigmansworld.com/wp-content/uploads/2022/10/tiramisu-cake-recipe.jpg",
+        name: "Tiramisu",
+        img: "https://preppykitchen.com/wp-content/uploads/2018/06/Tiramisu-Blog-a.jpg",
         price: 5,
         mostpop: true,
         seasonal: false,
@@ -59,7 +59,7 @@ const food = [
     },
     {
         name: "Hot Chocolate",
-        img: "https://www.foodandwine.com/thmb/V1OEgtLQGUv_w2Fvm40WMLsJ4rk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Indulgent-Hot-Chocolate-FT-RECIPE0223-fd36942ef266417ab40440374fc76a15.jpg",
+        img: "https://proposal007.com/wp-content/uploads/2020/11/AdobeStock_234224425-1.jpeg",
         price: 2,
         mostpop: true,
         seasonal: false,

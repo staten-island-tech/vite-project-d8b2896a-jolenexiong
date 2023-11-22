@@ -6,7 +6,7 @@ function displayall() {
     food.forEach((meal) => app.insertAdjacentHTML(
         "beforeend",
         `<div class="card">
-<h2>${meal.name}</h2>
+<h2 class="name">${meal.name}</h2>
 <img src = "${meal.img}"class="pic">
 <h2>${meal.price}</h2>
 </div>`
