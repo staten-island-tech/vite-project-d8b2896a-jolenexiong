@@ -16,17 +16,19 @@ displayall()
 
 console.log(food)
 
-
 const DOMSelectors = {
     Cszn: document.querySelector("#Csznbtn"),
     bev: document.querySelector("#bevbtn"),
     Fszn: document.querySelector("#sznbtn"),
-   
-
-
+    container: document.querySelector(".container")
 }
+   
+function clearfields(){
+    DOMSelectors.app.innerHTML = "";
+};
 
-DOMSelectors.Cszn.addEventListener("click", function () {
+Cszn.addEventListener("click", function () {
+    clearfields()
     food.filter((meal) => meal.seasonal.includes("Christmas"))
         .forEach((meal) => parent.insertAdjacentHTML(
             "beforeend",
@@ -38,7 +40,8 @@ DOMSelectors.Cszn.addEventListener("click", function () {
         ))
 })
 
-DOMSelectors.Fszn.addEventListener("click", function () {
+Fszn.addEventListener("click", function () {
+    clearfields()
     food.filter((meal) => meal.seasonal.includes("Fall"))
         .forEach((meal) => parent.insertAdjacentHTML(
             "beforeend",
@@ -50,7 +53,8 @@ DOMSelectors.Fszn.addEventListener("click", function () {
         ))
 })
 
-DOMSelectors.bev.addEventListener("click", function () {
+bev.addEventListener("click", function () {
+    clearfields()
     food.filter((meal) => meal.bev===true)
         .forEach((meal) => parent.insertAdjacentHTML(
             "beforeend",
