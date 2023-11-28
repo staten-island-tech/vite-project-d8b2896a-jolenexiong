@@ -26,7 +26,7 @@ const DOMSelectors = {
 
 }
 
-Cszn.addEventListener("click", function () {
+DOMSelectors.Cszn.addEventListener("click", function () {
     food.filter((meal) => meal.seasonal.includes("Christmas"))
         .forEach((meal) => parent.insertAdjacentHTML(
             "beforeend",
@@ -38,7 +38,7 @@ Cszn.addEventListener("click", function () {
         ))
 })
 
-Fszn.addEventListener("click", function () {
+DOMSelectors.Fszn.addEventListener("click", function () {
     food.filter((meal) => meal.seasonal.includes("Fall"))
         .forEach((meal) => parent.insertAdjacentHTML(
             "beforeend",
@@ -50,7 +50,7 @@ Fszn.addEventListener("click", function () {
         ))
 })
 
-bev.addEventListener("click", function () {
+DOMSelectors.bev.addEventListener("click", function () {
     food.filter((meal) => meal.bev===true)
         .forEach((meal) => parent.insertAdjacentHTML(
             "beforeend",
