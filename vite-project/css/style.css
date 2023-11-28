@@ -12,6 +12,11 @@ body{
  
 }
 
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .pink {
   --primary:var(--pink);
 }

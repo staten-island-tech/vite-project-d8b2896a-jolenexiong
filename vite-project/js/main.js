@@ -17,29 +17,47 @@ displayall()
 console.log(food)
 
 
-
-
-
 const DOMSelectors = {
-    pop: document.querySelector("#popbtn"),
+    Cszn: document.querySelector("#Csznbtn"),
     bev: document.querySelector("#bevbtn"),
-    szn: document.querySelector("#sznbtn"),
+    Fszn: document.querySelector("#sznbtn"),
+   
 
 
-};
+}
 
-function pop() {
-    document.querySelector("#popbtn").forEach((btn) => btn.addEventListener('click', function (event) {
-        food.filter((item) => item.mostpop === true)
-            .forEach((item) => parent.insertAdjacentHTML("beforeend",
-                `<div class="card">
+Cszn.addEventListener("click", function () {
+    food.filter((meal) => meal.seasonal.includes("Christmas"))
+        .forEach((meal) => parent.insertAdjacentHTML(
+            "beforeend",
+            `<div class="card">
+<h2 class="name">${meal.name}</h2>
+<img src = "${meal.img}"class="pic">
+<h2>${meal.price}</h2>
+</div>`
+        ))
+})
+
+Fszn.addEventListener("click", function () {
+    food.filter((meal) => meal.seasonal.includes("Fall"))
+        .forEach((meal) => parent.insertAdjacentHTML(
+            "beforeend",
+            `<div class="card">
     <h2 class="name">${meal.name}</h2>
     <img src = "${meal.img}"class="pic">
     <h2>${meal.price}</h2>
     </div>`
+        ))
+})
 
-            ))
-    })
-    );
-}
-pop()
+bev.addEventListener("click", function () {
+    food.filter((meal) => meal.bev===true)
+        .forEach((meal) => parent.insertAdjacentHTML(
+            "beforeend",
+            `<div class="card">
+        <h2 class="name">${meal.name}</h2>
+        <img src = "${meal.img}"class="pic">
+        <h2>${meal.price}</h2>
+        </div>`
+        ))
+})
