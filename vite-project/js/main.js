@@ -29,7 +29,7 @@ const DOMSelectors = {
 };
 
 function pop() {
-    document.querySelector(".pop").forEach((btn) => btn.addEventListener('click', function (event) {
+    document.querySelector("pop").forEach((btn) => btn.addEventListener('click', function (event) {
         food.filter((food) => food.mostpop === true)
             .forEach((food) => food.insertAdjacentHTML("beforeend",
                 `<div class="card">
