@@ -29,9 +29,9 @@ const DOMSelectors = {
 };
 
 function pop() {
-    document.querySelector("pop").forEach((btn) => btn.addEventListener('click', function (event) {
-        food.filter((food) => food.mostpop === true)
-            .forEach((food) => food.insertAdjacentHTML("beforeend",
+    document.querySelector("#popbtn").forEach((btn) => btn.addEventListener('click', function (event) {
+        food.filter((item) => item.mostpop === true)
+            .forEach((item) => parent.insertAdjacentHTML("beforeend",
                 `<div class="card">
     <h2 class="name">${meal.name}</h2>
     <img src = "${meal.img}"class="pic">
@@ -42,4 +42,4 @@ function pop() {
     })
     );
 }
- pop()
+pop()
