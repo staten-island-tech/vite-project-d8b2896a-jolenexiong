@@ -20,30 +20,31 @@ const DOMSelectors = {
     Cszn: document.querySelector("#Csznbtn"),
     bev: document.querySelector("#bevbtn"),
     Fszn: document.querySelector("#sznbtn"),
-    container: document.querySelector(".container")
+    container: document.querySelector(".container"),
 }
-   
-function clearfields(){
-    DOMSelectors.app.innerHTML = "";
+
+function clearfields() {
+    DOMSelectors.container.innerHTML = "";
 };
 
-Cszn.addEventListener("click", function () {
-    clearfields()
-    food.filter((meal) => meal.seasonal.includes("Christmas"))
-        .forEach((meal) => parent.insertAdjacentHTML(
+
+DOMSelectors.Cszn.addEventListener("click", function () {
+    clearfields();
+const Cmeal =  food.filter((meal) => meal.seasonal===("Christmas"));
+        Cmeal.forEach((Cmeal) => container.insertAdjacentHTML(
             "beforeend",
             `<div class="card">
-<h2 class="name">${meal.name}</h2>
-<img src = "${meal.img}"class="pic">
-<h2>${meal.price}</h2>
+<h2 class="name">${Cmeal.name}</h2>
+<img src = "${Cmeal.img}"class="pic">
+<h2>${Cmeal.price}</h2>
 </div>`
         ))
 })
 
-Fszn.addEventListener("click", function () {
-    clearfields()
-    food.filter((meal) => meal.seasonal.includes("Fall"))
-        .forEach((meal) => parent.insertAdjacentHTML(
+DOMSelectors.Fszn.addEventListener("click", function () {
+    clearfields();
+    food.filter((meal) => meal.seasonal===("Fall"))
+        .forEach((meal) => container.insertAdjacentHTML(
             "beforeend",
             `<div class="card">
     <h2 class="name">${meal.name}</h2>
@@ -53,10 +54,10 @@ Fszn.addEventListener("click", function () {
         ))
 })
 
-bev.addEventListener("click", function () {
-    clearfields()
-    food.filter((meal) => meal.bev===true)
-        .forEach((meal) => parent.insertAdjacentHTML(
+DOMSelectors.bev.addEventListener("click", function () {
+    clearfields();
+    food.filter((meal) => meal.bev === true)
+        .forEach((meal) => container.insertAdjacentHTML(
             "beforeend",
             `<div class="card">
         <h2 class="name">${meal.name}</h2>
