@@ -8,14 +8,10 @@ body{
   background-color: var(--primary);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
- 
-}
+   justify-content: space-evenly;
+};
 
-.app {
-  display: flex;
-  flex-wrap: wrap;
-}
+.ite
 
 .pink {
   --primary:var(--pink);
@@ -27,11 +23,11 @@ body{
 
 .card {
   background-color: #F2E2BA;
-  width: 45%;
+  width: 55%;
   border-radius: 25px;
   display: flex;
   flex-wrap:wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin:25px;
   
   
@@ -39,7 +35,7 @@ body{
 
 .pic {
   border-radius: 8px;
-  width: 25vw;
+  width: 24vw;
   height: 35vh;
   padding: 15%;
   padding-top: 15px;
@@ -64,8 +60,12 @@ body{
   
 }
 
-.colorchanger {
-  text-align: center;
+
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 

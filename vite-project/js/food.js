@@ -23,8 +23,8 @@ const food = [
         bev: false,
     },
     {
-        name: "Pumpkin Spice Cheesecake Slice",
-        img: "https://www.sugarhero.com/wp-content/uploads/2021/11/pumpkin-spice-cheesecake-3.jpg",
+        name: "Pumpkin Pie Cheesecake Slice",
+        img: "https://iwashyoudry.com/wp-content/uploads/2021/09/Pumpkin-cheesecake-slice-plate-feature-500x500.jpg",
         price: "$5.50",
         seasonal: "Fall",
         bev: false,

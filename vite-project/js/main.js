@@ -12,7 +12,7 @@ function displayall() {
 </div>`
     ));
 }
-displayall()
+
 
 
 const DOMSelectors = {
@@ -22,9 +22,10 @@ const DOMSelectors = {
     items: document.querySelector(".items"),
     theme: document.querySelector(".Tbtn"),
     app: document.querySelector("#app"),
-}
+    btn: document.querySelector(".btn")
+};
 
-function clearfields() {
+function clearFields() {
     DOMSelectors.items.innerHTML = "";
 };
 
@@ -32,20 +33,20 @@ function clearfields() {
 
 DOMSelectors.Cszn.addEventListener("click", function () {
     const Cmeal = food.filter((meal) => meal.seasonal === ("Christmas"));
-    clearfields();
+    clearFields();
     Cmeal.forEach((Cmeal) => DOMSelectors.app.insertAdjacentHTML(
         "beforeend",
         `<div class="card">
-<h2 class="name">${Cmeal.name}</h2>
-<img src = "${Cmeal.img}"class="pic">
-<h2>${Cmeal.price}</h2>
-</div>`
+            <h2 class="name">${Cmeal.name}</h2>
+            <img src = "${Cmeal.img}"class="pic">
+            <h2>${Cmeal.price}</h2>
+            </div>`
     ))
 })
 
 DOMSelectors.Fszn.addEventListener("click", function () {
     const Fmeal = food.filter((Fmeal) => Fmeal.seasonal === ("Fall"));
-    clearfields();
+    clearFields();
     Fmeal.forEach((meal) => DOMSelectors.app.insertAdjacentHTML(
         "beforeend",
         `<div class="card">
@@ -58,7 +59,7 @@ DOMSelectors.Fszn.addEventListener("click", function () {
 
 DOMSelectors.bev.addEventListener("click", function () {
     const bevs = food.filter((meal) => meal.bev === true);
-    clearfields();
+    clearFields();
     bevs.forEach((meal) => DOMSelectors.app.insertAdjacentHTML(
         "beforeend",
         `<div class="card">
