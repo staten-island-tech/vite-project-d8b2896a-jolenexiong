@@ -1,18 +1,18 @@
 :root {
   --pink:#EFA9AE;
-  --green: #D0D1AC;
+  --green: #8BBD8B;
   --primary: var(--pink);
 }
 
 body{
-  background-color: #9BC1BC;
+  background-color: var(--primary);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
  
 }
 
-.items {
+.app {
   display: flex;
   flex-wrap: wrap;
 }
@@ -27,7 +27,7 @@ body{
 
 .card {
   background-color: #F2E2BA;
-  width: 60%;
+  width: 45%;
   border-radius: 25px;
   display: flex;
   flex-wrap:wrap;
@@ -40,7 +40,7 @@ body{
 .pic {
   border-radius: 8px;
   width: 25vw;
-  height: 40vh;
+  height: 35vh;
   padding: 15%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -67,5 +67,6 @@ body{
 .colorchanger {
   text-align: center;
 }
+
 
 

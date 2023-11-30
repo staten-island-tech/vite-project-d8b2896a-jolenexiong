@@ -14,55 +14,67 @@ function displayall() {
 }
 displayall()
 
-console.log(food)
 
 const DOMSelectors = {
-    Cszn: document.querySelector("#Csznbtn"),
-    bev: document.querySelector("#bevbtn"),
-    Fszn: document.querySelector("#sznbtn"),
-    container: document.querySelector(".container"),
+    Cszn: document.querySelector(".Csznbtn"),
+    bev: document.querySelector(".bevbtn"),
+    Fszn: document.querySelector(".Fsznbtn"),
+    items: document.querySelector(".items"),
+    theme: document.querySelector(".Tbtn"),
+    app: document.querySelector("#app"),
 }
 
 function clearfields() {
-    DOMSelectors.container.innerHTML = "";
+    DOMSelectors.items.innerHTML = "";
 };
 
 
+
 DOMSelectors.Cszn.addEventListener("click", function () {
+    const Cmeal = food.filter((meal) => meal.seasonal === ("Christmas"));
     clearfields();
-const Cmeal =  food.filter((meal) => meal.seasonal===("Christmas"));
-        Cmeal.forEach((Cmeal) => container.insertAdjacentHTML(
-            "beforeend",
-            `<div class="card">
+    Cmeal.forEach((Cmeal) => DOMSelectors.app.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card">
 <h2 class="name">${Cmeal.name}</h2>
 <img src = "${Cmeal.img}"class="pic">
 <h2>${Cmeal.price}</h2>
 </div>`
-        ))
+    ))
 })
 
 DOMSelectors.Fszn.addEventListener("click", function () {
+    const Fmeal = food.filter((Fmeal) => Fmeal.seasonal === ("Fall"));
     clearfields();
-    food.filter((meal) => meal.seasonal===("Fall"))
-        .forEach((meal) => container.insertAdjacentHTML(
-            "beforeend",
-            `<div class="card">
+    Fmeal.forEach((meal) => DOMSelectors.app.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card">
     <h2 class="name">${meal.name}</h2>
     <img src = "${meal.img}"class="pic">
     <h2>${meal.price}</h2>
     </div>`
-        ))
+    ))
 })
 
 DOMSelectors.bev.addEventListener("click", function () {
+    const bevs = food.filter((meal) => meal.bev === true);
     clearfields();
-    food.filter((meal) => meal.bev === true)
-        .forEach((meal) => container.insertAdjacentHTML(
-            "beforeend",
-            `<div class="card">
+    bevs.forEach((meal) => DOMSelectors.app.insertAdjacentHTML(
+        "beforeend",
+        `<div class="card">
         <h2 class="name">${meal.name}</h2>
         <img src = "${meal.img}"class="pic">
         <h2>${meal.price}</h2>
         </div>`
-        ))
+    ))
 })
+DOMSelectors.theme.addEventListener("click", function () {
+    if (document.body.classList.contains("pink")) {
+        document.body.classList.add("green");
+        document.body.classList.remove("pink");
+    } else {
+        document.body.classList.remove("green");
+        document.body.classList.add("pink");
+    }
+});
+

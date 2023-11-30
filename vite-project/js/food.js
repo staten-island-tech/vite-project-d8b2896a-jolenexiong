@@ -9,7 +9,7 @@ const food = [
 
     {
         name: "Pain au Chocolat",
-        img: "https://th.bing.com/th/id/R.b54af02133f044168d7a2710442359e0?rik=B%2faONHuZ%2b8YU7w&riu=http%3a%2f%2fgateaux-et-delices.com%2fwp-content%2fuploads%2f2016%2f02%2fPains-au-chocolat-express1-1.jpg&ehk=6b5GCuFmlvOtwb7X5pJXhTyJug4Cwb0aj2Ou7I1MkOs%3d&risl=&pid=ImgRaw&r=0",
+        img: "https://gateaux-et-delices.com/wp-content/uploads/2016/02/Pains-au-chocolat-express1-1.jpg",
         price: "$4",
         seasonal: "no",
         bev: false,
@@ -26,7 +26,6 @@ const food = [
         name: "Pumpkin Spice Cheesecake Slice",
         img: "https://www.sugarhero.com/wp-content/uploads/2021/11/pumpkin-spice-cheesecake-3.jpg",
         price: "$5.50",
-
         seasonal: "Fall",
         bev: false,
     },
@@ -39,7 +38,7 @@ const food = [
     },
     {
         name: "Peppermint Mocha Latte",
-        img: "https://www.thereciperebel.com/wp-content/uploads/2018/11/peppermint-mocha-www.thereciperebel.com-1200-8-of-12.jpg",
+        img: "https://www.berlyskitchen.com/wp-content/uploads/2020/05/Peppermint-Mocha-Featured-Image.jpg",
         price: "$3.5",
         seasonal: "Christmas",
         bev: true,
