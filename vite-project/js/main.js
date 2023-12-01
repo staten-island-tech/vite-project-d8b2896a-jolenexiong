@@ -13,20 +13,19 @@ function displayall() {
     ));
 }
 
-
+displayall();
 
 const DOMSelectors = {
     Cszn: document.querySelector(".Csznbtn"),
     bev: document.querySelector(".bevbtn"),
     Fszn: document.querySelector(".Fsznbtn"),
-    items: document.querySelector(".items"),
     theme: document.querySelector(".Tbtn"),
     app: document.querySelector("#app"),
-    btn: document.querySelector(".btn")
+  
 };
 
 function clearFields() {
-    DOMSelectors.items.innerHTML = "";
+    DOMSelectors.app.innerHTML = "";
 };
 
 

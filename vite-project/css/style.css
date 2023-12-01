@@ -6,12 +6,10 @@
 
 body{
   background-color: var(--primary);
-  display: flex;
-  flex-wrap: wrap;
-   justify-content: space-evenly;
+  
 };
 
-.ite
+
 
 .pink {
   --primary:var(--pink);
@@ -23,23 +21,28 @@ body{
 
 .card {
   background-color: #F2E2BA;
-  width: 55%;
+  width: 25%;
   border-radius: 25px;
   display: flex;
   flex-wrap:wrap;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row;
   margin:25px;
+  transition: 0.3s;
   
   
+}
+
+.card:hover {
+  transform: translateY(-15px);
 }
 
 .pic {
   border-radius: 8px;
   width: 24vw;
   height: 35vh;
-  padding: 15%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  align-items: center;
+  padding: 14%;
  
   
 }
@@ -53,20 +56,14 @@ body{
 .header {
   text-align: center;
   font-size: 65px;
+  text-decoration: underline;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .btn {
   text-align: center;
-  
 }
-
-
-.items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-
-
