@@ -1,6 +1,6 @@
 :root {
-  --pink:#EFA9AE;
-  --green: #8BBD8B;
+  --pink:#FFCFD2;
+  --green: #A1D2CE;
   --primary: var(--pink);
 }
 
@@ -21,7 +21,7 @@ body{
 
 .card {
   background-color: #F2E2BA;
-  width: 25%;
+  width: 27%;
   border-radius: 25px;
   display: flex;
   flex-wrap:wrap;
@@ -43,6 +43,8 @@ body{
   height: 35vh;
   align-items: center;
   padding: 14%;
+  padding-top: 15px;
+  padding-bottom: 15px;
  
   
 }
@@ -62,6 +64,7 @@ body{
 #app {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .btn {

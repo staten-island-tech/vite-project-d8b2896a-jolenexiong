@@ -13,7 +13,7 @@ function displayall() {
     ));
 }
 
-displayall();
+
 
 const DOMSelectors = {
     Cszn: document.querySelector(".Csznbtn"),
@@ -21,6 +21,7 @@ const DOMSelectors = {
     Fszn: document.querySelector(".Fsznbtn"),
     theme: document.querySelector(".Tbtn"),
     app: document.querySelector("#app"),
+    all: document.querySelector(".allbtn"),
   
 };
 
@@ -28,7 +29,10 @@ function clearFields() {
     DOMSelectors.app.innerHTML = "";
 };
 
-
+DOMSelectors.all.addEventListener("click", function () {
+    clearFields();
+    displayall();
+})
 
 DOMSelectors.Cszn.addEventListener("click", function () {
     const Cmeal = food.filter((meal) => meal.seasonal === ("Christmas"));
