@@ -22,6 +22,7 @@ const DOMSelectors = {
     theme: document.querySelector(".Tbtn"),
     app: document.querySelector("#app"),
     all: document.querySelector(".allbtn"),
+
   
 };
 
@@ -74,11 +75,11 @@ DOMSelectors.bev.addEventListener("click", function () {
 })
 DOMSelectors.theme.addEventListener("click", function () {
     if (document.body.classList.contains("pink")) {
-        document.body.classList.add("green");
+        document.body.classList.add("blue");
         document.body.classList.remove("pink");
     } else {
-        document.body.classList.remove("green");
+        document.body.classList.remove("blue");
         document.body.classList.add("pink");
-    }
+    } 
 });
 

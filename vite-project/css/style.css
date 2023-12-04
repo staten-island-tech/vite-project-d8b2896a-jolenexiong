@@ -1,6 +1,9 @@
 :root {
   --pink:#FFCFD2;
-  --green: #A1D2CE;
+  --blue: #A1D2CE;
+  --yellow: #F2E2BA;
+  --beige: #E4DFDA;
+
   --primary: var(--pink);
 }
 
@@ -9,18 +12,24 @@ body{
   
 };
 
+.yellow {
+  background-color:var(--yellow);
+}
 
+.beige {
+  background-color:var(--beige);
+}
 
 .pink {
   --primary:var(--pink);
 }
-.green {
-  --primary:var(--green);
+.blue {
+  --primary:var(--blue);
 }
 
 
 .card {
-  background-color: #F2E2BA;
+  background-color: var(--yellow);
   width: 27%;
   border-radius: 25px;
   display: flex;
