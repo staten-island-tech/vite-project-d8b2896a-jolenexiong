@@ -40,12 +40,12 @@ body{
 }
 
 .card:hover {
-  transform: scale(1.15, 1.15);
+  transform: scale(1.1, 1.1);
 }
 
 .pic {
-  border-radius: 8px;
-  width: 24vw;
+  border-radius: 20px;
+  width: 25vw;
   height: 35vh;
   align-items: center;
   padding: 14%;
@@ -58,13 +58,13 @@ body{
 .name {
   text-align: center;
   padding-top: 10px;
-  
 }
 
 .header {
   text-align: center;
   font-size: 65px;
   text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #app {
