@@ -13,6 +13,17 @@ function displayall() {
     ));
 }
 
+function displayone(meal) {
+DOMSelectors.app.insertAdjacentHTML(
+    "beforeend",
+    `<div class="card">
+<h2 class="name">${meal.name}</h2>
+<img src = "${meal.img}"class="pic">
+<h2>${meal.price}</h2>
+</div>`
+)
+}
+
 
 
 const DOMSelectors = {
@@ -35,31 +46,33 @@ DOMSelectors.all.addEventListener("click", function () {
     displayall();
 })
 
-DOMSelectors.Cszn.addEventListener("click", function () {
-    const Cmeal = food.filter((meal) => meal.seasonal === ("Christmas"));
-    clearFields();
-    Cmeal.forEach((Cmeal) => DOMSelectors.app.insertAdjacentHTML(
-        "beforeend",
-        `<div class="card">
-            <h2 class="name">${Cmeal.name}</h2>
-            <img src = "${Cmeal.img}"class="pic">
-            <h2>${Cmeal.price}</h2>
-            </div>`
-    ))
-})
+// DOMSelectors.Cszn.addEventListener("click", function () {
+//     const Cmeal = food.filter((meal) => meal.seasonal === ("Christmas"));
+//     clearFields();
+//     Cmeal.forEach((Cmeal) => DOMSelectors.app.insertAdjacentHTML(
+//         "beforeend",
+//         `<div class="card">
+//             <h2 class="name">${Cmeal.name}</h2>
+//             <img src = "${Cmeal.img}"class="pic">
+//             <h2>${Cmeal.price}</h2>
+//             </div>`
+//     ))
+// })
 
-DOMSelectors.Fszn.addEventListener("click", function () {
-    const Fmeal = food.filter((Fmeal) => Fmeal.seasonal === ("Fall"));
-    clearFields();
-    Fmeal.forEach((meal) => DOMSelectors.app.insertAdjacentHTML(
-        "beforeend",
-        `<div class="card">
-    <h2 class="name">${meal.name}</h2>
-    <img src = "${meal.img}"class="pic">
-    <h2>${meal.price}</h2>
-    </div>`
-    ))
-})
+// DOMSelectors.Fszn.addEventListener("click", function () {
+//     const Fmeal = food.filter((Fmeal) => Fmeal.seasonal === ("Fall"));
+//     clearFields();
+//     Fmeal.forEach((meal) => DOMSelectors.app.insertAdjacentHTML(
+//         "beforeend",
+//         `<div class="card">
+//     <h2 class="name">${meal.name}</h2>
+//     <img src = "${meal.img}"class="pic">
+//     <h2>${meal.price}</h2>
+//     </div>`
+//     ))
+// })
+
+let sznalbutton = ["DOMSelectors.Cszn", "DOMSelectors.Fszn"]
 
 DOMSelectors.bev.addEventListener("click", function () {
     const bevs = food.filter((meal) => meal.bev === true);
