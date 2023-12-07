@@ -72,7 +72,17 @@ DOMSelectors.all.addEventListener("click", function () {
 //     ))
 // })
 
-let sznalbutton = ["DOMSelectors.Cszn", "DOMSelectors.Fszn"]
+let sznalbutton = (".Cszn, .Fszn")
+sznalbutton.forEach((btn)=> btn.addEventListener("click", function (){
+    let season = btn.textContent.toLowerCase()
+    let newArr = food.filter((whichszn) => whichszn.seasonal.includes(season))
+    document.querySelector(.pae)
+}))
+
+
+
+
+
 
 DOMSelectors.bev.addEventListener("click", function () {
     const bevs = food.filter((meal) => meal.bev === true);
